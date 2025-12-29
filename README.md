@@ -60,7 +60,6 @@ doc.save("demo.docx")
 
 This will create your `demo.docx` file in your current folder.
 
-Preview:
 ![DOCX preview](.github/images/Screenshot%20from%202025-12-30%2004-11-43.png)
 
 
