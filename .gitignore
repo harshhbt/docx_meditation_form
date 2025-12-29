@@ -1,0 +1,5 @@
+token.json
+__pycache__/
+*.egg-info/
+*.docx
+.~lock.*
