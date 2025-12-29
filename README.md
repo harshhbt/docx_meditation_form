@@ -84,8 +84,7 @@ file_id = uploader.upload_file(
 print(f"https://drive.google.com/file/d/{file_id}")
 ```
 
-Supported credentials: Service Account JSON or OAuth `token.json` (see https://support.google.com/cloud/answer/15549257?sjid=2279917415296057426-NC
-).
+Supported credentials: Service Account JSON or OAuth `token.json` (see https://support.google.com/cloud/answer/15549257).
 
 ## Methodology (How the PDF was converted to DOCX manually)
 
