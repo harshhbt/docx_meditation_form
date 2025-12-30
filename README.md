@@ -12,6 +12,12 @@ cd docx_meditation_form
 pip install -e .
 ```
 
+or
+
+```console
+pip install git+https://github.com/harshhbt/docx_meditation_form.git
+```
+
 ## Quick start
 
 ```python
@@ -81,7 +87,8 @@ file_id = uploader.upload_file(
     "demo.docx",
     drive_folder_id="YOUR_FOLDER_ID",
 )
-print(f"https://drive.google.com/file/d/{file_id}")
+uploader.make_public(file_id) # this allows anyone with the link to view the document
+print(f"https://drive.google.com/file/d/{file_id}/view")
 ```
 
 Supported credentials: Service Account JSON or OAuth `token.json` (see https://support.google.com/cloud/answer/15549257).

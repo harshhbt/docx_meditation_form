@@ -13,7 +13,7 @@ from .core import DocxSettings, HeaderWriter, TableWriter
 from .dataset import ROW_HEIGHTS_DATASET, COLUMN_WIDTHS_DATASET, FormValues
 from .integrations import GoogleDriveUploader
 
-__version__ = "0.0.3"
+__version__ = "0.1.0"
 
 __all__ = [
     "HeaderWriter",

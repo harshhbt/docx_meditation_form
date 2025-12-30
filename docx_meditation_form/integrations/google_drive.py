@@ -109,3 +109,24 @@ class GoogleDriveUploader:
         )
 
         return response["id"]
+
+    def make_public(self, file_id: str) -> None:
+        """
+        Make a Google Drive file publicly accessible.
+
+        Grants `reader` access to anyone with the link, allowing the file
+        to be viewed without authentication.
+
+        :param file_id: Google Drive file ID.
+        :type file_id: FileId to make public.
+
+        :raises googleapiclient.errors.HttpError:
+            If the permission change request fails.
+        """
+        self.service.permissions().create(
+            fileId=file_id,
+            body={
+                "type": "anyone",
+                "role": "reader",
+            },
+        ).execute()

@@ -45,9 +45,10 @@ def main():
     uploader = GoogleDriveUploader("token.json")
     file_id = uploader.upload_file(
         "demo.docx",
-        drive_folder_id="YOUR_FOLDER_ID",
+        drive_folder_id=None,
     )
-    print(f"https://drive.google.com/file/d/{file_id}")
+    uploader.make_public(file_id) # this allows anyone with the link to view the document
+    print(f"https://drive.google.com/file/d/{file_id}/view")
 
 
 if __name__ == "__main__":
