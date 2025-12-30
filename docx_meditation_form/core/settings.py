@@ -26,7 +26,7 @@ class DocxSettings:
 
     Parameters
     ----------
-    doc : docx.document.Document
+    doc : `docx.document.Document`
         Target document whose sections and runs will be modified.
     """
 
@@ -53,14 +53,14 @@ class DocxSettings:
         """
         Apply the default font styling to a text run.
 
-        Parameters
-        ----------
-        run : docx.text.run.Run
-            The run to style.
-        bold : bool, optional
-            Whether the text should be bold.
-        underline : bool, optional
-            Whether the text should be underlined.
+        :param run: The run to style.
+        :type run: ``docx.text.run.Run``
+
+        :param bold: Whether the text should be bold.
+        :type bold: ``bool``
+
+        :param underline: Whether the text should be underlined.
+        :type underline: ``bool``
         """
         run.font.name = FONT_NAME
         run.font.size = FONT_SIZE

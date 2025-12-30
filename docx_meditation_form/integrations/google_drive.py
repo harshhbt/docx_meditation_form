@@ -14,14 +14,18 @@ class GoogleDriveUploader:
     """
     Uploads files to Google Drive using either OAuth or Service Account credentials.
 
-    Supported credential formats:
-    - Service Account JSON
-    - OAuth token.json (with refresh token)
+    :param credentials_json_path: Path to the credentials JSON file.
 
-    Parameters
-    ----------
-    credentials_json_path : str
-        Path to the credentials JSON file.
+    :raises FileNotFoundError: If the credentials file does not exist.
+    :raises ValueError: If the credentials format is not supported.
+
+    Supported credential formats:
+
+    - Service Account JSON:
+    https://developers.google.com/identity/protocols/oauth2/service-account
+
+    - OAuth ``token.json`` (with refresh token):
+    https://developers.google.com/identity/protocols/oauth2/native-app
     """
 
     def __init__(self, credentials_json_path: str) -> None:
@@ -66,17 +70,14 @@ class GoogleDriveUploader:
         """
         Upload a file to Google Drive.
 
-        Parameters
-        ----------
-        file_path : str
-            Local path to the file to upload.
-        drive_folder_id : str, optional
-            Target Drive folder ID. If omitted, uploads to root.
+        :param file_path: Local path to the file to upload.
+        :type file_path: ``str``
 
-        Returns
-        -------
-        str
-            The Google Drive file ID of the uploaded file.
+        :param drive_folder_id: Target Drive folder ID. If omitted, uploads to root.
+        :type drive_folder_id: ``str`` or ``None``
+
+        :return: The Google Drive file ID of the uploaded file.
+        :rtype: ``str``
         """
         path = Path(file_path)
 

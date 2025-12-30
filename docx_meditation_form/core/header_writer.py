@@ -14,16 +14,15 @@ City Civil Court, Mumbai"""
 
 class HeaderWriter:
     """
+    Parameters
+    ----------
+    :param doc: `docx.document.Document` active python-docx Document instance to write into.
+
     Writes the fixed header section of the mediation application form.
 
     This includes:
     - The main form title (FORM 'A')
     - The sub-header identifying the authority and court
-
-    Parameters
-    ----------
-    doc : docx.document.Document
-        An active python-docx Document instance to write into.
     """
 
     def __init__(self, doc: Document):

@@ -138,7 +138,7 @@ class TableWriter:
         Write address / phone / email rows.
 
         idx controls which field is written.
-        prefix selects APPLICANT_* or DEFENDANT_* values.
+        prefix selects `APPLICANT_*` or `DEFENDANT_*` values.
         """
 
         def field(name: str) -> str:
@@ -257,9 +257,9 @@ class TableWriter:
         """
         Set minimum row height.
 
-        :param row: docx.table.Table._Row
-        :param height: docx.shared.Length
-
+        :param row: `docx.table.Table._Row`
+        :param height: `docx.shared.Length`
+        
         Thanks: https://stackoverflow.com/a/43407902/32112205
         """
         tr = row._tr

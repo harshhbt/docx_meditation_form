@@ -24,8 +24,8 @@ class CellFormatter:
         """
         Write centered label text in a table cell.
 
-        :param cell: docx.table._Cell
-        :param text: Cell text
+        :param cell: `docx.table._Cell`
+        :param text: Cell text `str`
         """
         cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
         p = cell.paragraphs[0]

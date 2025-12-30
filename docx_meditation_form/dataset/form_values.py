@@ -6,33 +6,19 @@ class FormValues:
     passed explicitly to dataset builders (e.g. `build_rows_dataset`) to render
     the document.
 
-    Parameters
-    ----------
-    APPLICANT_NAME : str
-        Full name of the applicant.
-    APPLICANT_BRANCH_ADDRESS : str
-        Registered / branch address of the applicant.
-    APPLICANT_CORRESPONDENCE_BRANCH_ADDRESS : str
-        Correspondence address of the applicant.
-    APPLICANT_PHONE : str
-        Landline / phone number of the applicant.
-    APPLICANT_MOBILE : str
-        Mobile number of the applicant.
-    APPLICANT_EMAIL_ID : str
-        Email address of the applicant.
+    :param APPLICANT_NAME: Full name of the applicant.
+    :param APPLICANT_BRANCH_ADDRESS: Registered / branch address of the applicant.
+    :param APPLICANT_CORRESPONDENCE_BRANCH_ADDRESS: Correspondence address of the applicant.
+    :param APPLICANT_PHONE: Landline / phone number of the applicant.
+    :param APPLICANT_MOBILE: Mobile number of the applicant.
+    :param APPLICANT_EMAIL_ID: Email address of the applicant.
 
-    DEFENDANT_NAME : str
-        Full name of the defendant / opposite party.
-    DEFENDANT_BRANCH_ADDRESS : str
-        Registered / branch address of the defendant.
-    DEFENDANT_CORRESPONDENCE_BRANCH_ADDRESS : str
-        Correspondence address of the defendant.
-    DEFENDANT_PHONE : str
-        Landline / phone number of the defendant.
-    DEFENDANT_MOBILE : str
-        Mobile number of the defendant.
-    DEFENDANT_EMAIL_ID : str
-        Email address of the defendant.
+    :param DEFENDANT_NAME: Full name of the defendant / opposite party.
+    :param DEFENDANT_BRANCH_ADDRESS: Registered / branch address of the defendant.
+    :param DEFENDANT_CORRESPONDENCE_BRANCH_ADDRESS: Correspondence address of the defendant.
+    :param DEFENDANT_PHONE: Landline / phone number of the defendant.
+    :param DEFENDANT_MOBILE: Mobile number of the defendant.
+    :param DEFENDANT_EMAIL_ID: Email address of the defendant.
     """
 
     def __init__(
